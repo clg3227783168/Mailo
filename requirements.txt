@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain_openai
+langchain-core
+python-dotenv
+pydantic
+html2text
+requests
+PyJWT
+socksio

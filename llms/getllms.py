@@ -1,4 +1,4 @@
-from langchain_community.chat_models import ChatZhipuAI
+from langchain_openai import ChatOpenAI
 import os
 from dotenv import load_dotenv
 
@@ -15,9 +15,9 @@ def get_zhipu_ai_llm():
     Returns:
         ChatZhipuAI: 配置好的智谱AI大语言模型实例
     """
-    return ChatZhipuAI(
+    return ChatOpenAI(
         temperature=0.5,
         model="glm-4.5",
-        api_key=ZHIPUAI_API_KEY,
+        openai_api_key=ZHIPUAI_API_KEY,
         openai_api_base="https://open.bigmodel.cn/api/paas/v4/"
     )
